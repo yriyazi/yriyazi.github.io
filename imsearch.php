@@ -1,15 +1,16 @@
+<?php require_once("res/x5engine.php"); ?>
 <!DOCTYPE html><!-- HTML5 -->
 <html prefix="og: http://ogp.me/ns#" lang="en-GB" dir="ltr">
 	<head>
-		<title>New Project</title>
+		<title>Search - New Project</title>
 		<meta charset="utf-8" />
 		<!--[if IE]><meta http-equiv="ImageToolbar" content="False" /><![endif]-->
 		<meta name="author" content="Yassin Riyazi" />
 		<meta name="generator" content="Incomedia WebSite X5 Professional 17.1.2 - www.websitex5.com" />
 		<meta property="og:locale" content="en" />
 		<meta property="og:type" content="website" />
-		<meta property="og:url" content="https://yriyazi.github.io/index.html" />
-		<meta property="og:title" content="Home Page" />
+		<meta property="og:url" content="https://yriyazi.github.io/imsearch.php" />
+		<meta property="og:title" content="Search" />
 		<meta property="og:site_name" content="New Project" />
 		<meta name="viewport" content="width=1150" />
 		
@@ -17,12 +18,12 @@
 		<link rel="stylesheet" href="style/print.css?17-1-2-0" media="print" />
 		<link rel="stylesheet" href="style/style.css?17-1-2-0" media="screen,print" />
 		<link rel="stylesheet" href="style/template.css?17-1-2-0" media="screen" />
-		<link rel="stylesheet" href="pcss/index.css?17-1-2-0-638275028434755821" media="screen,print" />
+		<link rel="stylesheet" href="pcss/imsearch.css?17-1-2-0-638275028434599611" media="screen,print" />
 		<script src="res/jquery.js?17-1-2-0"></script>
 		<script src="res/x5engine.js?17-1-2-0" data-files-version="17-1-2-0"></script>
 		<script>
 			window.onload = function(){ checkBrowserCompatibility('Your browser does not support the features necessary to display this website.','Your browser may not support the features necessary to display this website.','[1]Update your browser[/1] or [2]continue without updating[/2].','http://outdatedbrowser.com/'); };
-			x5engine.utils.currentPagePath = 'index.html';
+			x5engine.utils.currentPagePath = 'imsearch.php';
 			x5engine.boot.push(function () { x5engine.imPageToTop.initializeButton({}); });
 		</script>
 		
@@ -34,7 +35,7 @@
 				<div id="imFooterBg"></div>
 				<div id="imPage">
 					<header id="imHeader">
-						<h1 class="imHidden">New Project</h1>
+						<h1 class="imHidden">Search - New Project</h1>
 						<div id="imHeaderObjects"><div id="imHeader_imObjectImage_04_wrapper" class="template-object-wrapper"><div id="imHeader_imObjectImage_04"><div id="imHeader_imObjectImage_04_container"><img src="images/Lcars_wallpaper.svg.png" title="" alt="" />
 </div></div></div><div id="imHeader_imMenuObject_01_wrapper" class="template-object-wrapper"><!-- UNSEARCHABLE --><div id="imHeader_imMenuObject_01"><div id="imHeader_imMenuObject_01_container"><div class="hamburger-button hamburger-component"><div><div><div class="hamburger-bar"></div><div class="hamburger-bar"></div><div class="hamburger-bar"></div></div></div></div><div class="hamburger-menu-background-container hamburger-component">
 	<div class="hamburger-menu-background menu-mobile menu-mobile-animated hidden">
@@ -124,32 +125,18 @@ $(function () {$('#imStickyBar_imMenuObject_03_container ul li').not('.imMnMnSep
 					<div id="imContentGraphics"></div>
 					<main id="imContent">
 						<a id="imGoToCont"></a>
-						<div id="imPageRow_1" class="imPageRow">
+						<div id="imSearchPage">
+						<h2 id="imPgTitle">Search results</h2>
+						<?php
+						$search = new imSearch();
+						$keys = isset($_GET['search']) ? @htmlspecialchars($_GET['search']) : "";
+						$page = isset($_GET['page']) ? @htmlspecialchars($_GET['page']) : 0;
+						$type = isset($_GET['type']) ? @htmlspecialchars($_GET['type']) : "pages"; ?>
+						<div class="searchPageContainer">
+						<?php echo $search->search($keys, $page, $type); ?>
+						</div>
+						</div>
 						
-						</div>
-						<div id="imCell_3" class="" > <div id="imCellStyleGraphics_3"></div><div id="imCellStyleBorders_3"></div><div id="imObjectTitle_03"><span id ="imObjectTitle_03_text" >My WebSite</span></div></div><div id="imCell_4" class="" > <div id="imCellStyleGraphics_4"></div><div id="imCellStyleBorders_4"></div><div id="imTextObject_04">
-							<div data-index="0"  class="text-tab-content grid-prop current-tab "  id="imTextObject_04_tab0" style="opacity: 1; ">
-								<div class="text-inner">
-									As a mechanical engineer with a passion for robotics and artificial intelligence, I thrive on designing innovative solutions that bridge the gap between cutting-edge technology and mechanical systems. My expertise lies in leveraging AI-driven automation to enhance robotics applications, creating efficient and intelligent machines that drive progress in diverse industries.
-								</div>
-							</div>
-						
-						</div>
-						</div><div id="imCell_2" class="" > <div id="imCellStyleGraphics_2"></div><div id="imCellStyleBorders_2"></div><div id="imObjectImage_02"><div id="imObjectImage_02_container"></div></div>
-						<script>
-							x5engine.boot.push(function () {
-								$('#imObjectImage_02').addClass('imlazyloading').trigger('imLazyLoadingStart');
-								new x5engine.mediaObject({
-									'url': '211206165160216183098115135102099100156157150145101143167163151177096212163213',
-									'protect': true,
-									'load': function ( o ) {
-										$('#imObjectImage_02_container').html( $(o.DOMObject()).css({ 'position': 'relative', 'left': 0, 'top': 0 }) );
-										$('#imObjectImage_02').trigger('imLazyLoadingEnd');
-									}
-								});
-							});
-						</script>
-						</div>
 					</main>
 					<footer id="imFooter">
 						<div id="imFooterObjects"><div id="imFooter_imObjectTitle_04_wrapper" class="template-object-wrapper"><div id="imFooter_imObjectTitle_04"><span id ="imFooter_imObjectTitle_04_text" >Title</span></div></div><div id="imFooter_imTextObject_02_wrapper" class="template-object-wrapper"><div id="imFooter_imTextObject_02">
