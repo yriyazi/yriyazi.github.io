@@ -12,13 +12,13 @@
 		<meta property="og:url" content="https://yriyazi.github.io/imsearch.php" />
 		<meta property="og:title" content="Search" />
 		<meta property="og:site_name" content="New Project" />
-		<meta name="viewport" content="width=1150" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
 		<link rel="stylesheet" href="style/reset.css?17-1-2-0" media="screen,print" />
 		<link rel="stylesheet" href="style/print.css?17-1-2-0" media="print" />
 		<link rel="stylesheet" href="style/style.css?17-1-2-0" media="screen,print" />
 		<link rel="stylesheet" href="style/template.css?17-1-2-0" media="screen" />
-		<link rel="stylesheet" href="pcss/imsearch.css?17-1-2-0-638275028434599611" media="screen,print" />
+		<link rel="stylesheet" href="pcss/imsearch.css?17-1-2-0-638275433613368427" media="screen,print" />
 		<script src="res/jquery.js?17-1-2-0"></script>
 		<script src="res/x5engine.js?17-1-2-0" data-files-version="17-1-2-0"></script>
 		<script>
@@ -78,7 +78,7 @@ $(function () {$('#imHeader_imMenuObject_01_container ul li').not('.imMnMnSepara
 					<div id="imStickyBarContainer">
 						<div id="imStickyBarGraphics"></div>
 						<div id="imStickyBar">
-							<div id="imStickyBarObjects"><div id="imStickyBar_imObjectTitle_02_wrapper" class="template-object-wrapper"><div id="imStickyBar_imObjectTitle_02"><span id ="imStickyBar_imObjectTitle_02_text" >Title</span></div></div><div id="imStickyBar_imMenuObject_03_wrapper" class="template-object-wrapper"><!-- UNSEARCHABLE --><div id="imStickyBar_imMenuObject_03"><div id="imStickyBar_imMenuObject_03_container"><div class="hamburger-button hamburger-component"><div><div><div class="hamburger-bar"></div><div class="hamburger-bar"></div><div class="hamburger-bar"></div></div></div></div><div class="hamburger-menu-background-container hamburger-component">
+							<div id="imStickyBarObjects"><div id="imStickyBar_imObjectTitle_02_wrapper" class="template-object-wrapper"></div><div id="imStickyBar_imMenuObject_03_wrapper" class="template-object-wrapper"><!-- UNSEARCHABLE --><div id="imStickyBar_imMenuObject_03"><div id="imStickyBar_imMenuObject_03_container"><div class="hamburger-button hamburger-component"><div><div><div class="hamburger-bar"></div><div class="hamburger-bar"></div><div class="hamburger-bar"></div></div></div></div><div class="hamburger-menu-background-container hamburger-component">
 	<div class="hamburger-menu-background menu-mobile menu-mobile-animated hidden">
 		<div class="hamburger-menu-close-button"><span>&times;</span></div>
 	</div>
@@ -147,7 +147,7 @@ $(function () {$('#imStickyBar_imMenuObject_03_container ul li').not('.imMnMnSep
 	</div>
 
 </div>
-</div><div id="imFooter_imObjectImage_05_wrapper" class="template-object-wrapper"><div id="imFooter_imObjectImage_05"><div id="imFooter_imObjectImage_05_container"><img src="images/Lcars_wallpaper_q03c9v6c.svg.png" title="" alt="" />
+</div><div id="imFooter_imObjectImage_05_wrapper" class="template-object-wrapper"><div id="imFooter_imObjectImage_05"><div id="imFooter_imObjectImage_05_container"><img src="images/Lcars_wallpaper_gy40gb4e.svg.png" title="" alt="" />
 </div></div></div></div>
 					</footer>
 				</div>
