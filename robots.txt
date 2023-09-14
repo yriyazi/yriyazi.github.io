@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /admin
+Disallow: /captcha
+Disallow: /imemail
+
+Sitemap: http://yriyazi.github.io/sitemap.xml

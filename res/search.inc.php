@@ -24,6 +24,13 @@ $imSettings['search']['products'] = array(
 	IMAGES SEARCH
 *****************/
 $imSettings['search']['images'] = array(
+	array(
+		'title' => 'My self',
+		'description' => '',
+		'location' => '',
+		'src' => 'images/Untitled.png',
+		'page' => 'index.html'
+	)
 );
 
 /*****************
