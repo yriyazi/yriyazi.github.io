@@ -6,9 +6,7 @@
 $imSettings['search']['general'] = array(
 	'menu_position' => 'left',
 	'defaultScope' => array(
-		'0' => 'index.html',
-		'3' => 'projects.html',
-		'4' => 'skills.html'
+		'0' => 'index.html'
 	),
 	'extendedScope' => array(
 	)
@@ -24,13 +22,6 @@ $imSettings['search']['products'] = array(
 	IMAGES SEARCH
 *****************/
 $imSettings['search']['images'] = array(
-	array(
-		'title' => 'My self',
-		'description' => '',
-		'location' => '',
-		'src' => 'images/Untitled.png',
-		'page' => 'index.html'
-	)
 );
 
 /*****************

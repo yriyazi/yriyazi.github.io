@@ -1,1 +1,0 @@
-# yriyazi.github.io

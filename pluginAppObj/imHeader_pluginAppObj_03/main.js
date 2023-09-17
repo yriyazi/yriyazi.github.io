@@ -10,7 +10,7 @@ function socialicons_imHeader_pluginAppObj_03() {
         
         btnWidth = 40;
         btnHeight = 40;
-        btnMargin = 13;
+        btnMargin = 8;
         numBtn = $("#imHeader_pluginAppObj_03 .social-icon").length;
         
         $('#imContent').on('breakpointChangedOrFluid', function (e, breakpoint) {

@@ -101,11 +101,11 @@
 }
 
 .im-common-button-text-style{
-	font-family: 'Arial Black';
+	font-family: Tahoma;
 	font-size: 14pt;
-	color: #010101;
+	color: #ffffff;
 	font-style: normal;
-	font-weight: bold;
+	font-weight: normal;
 }
 #imShowBox .grabbable { cursor: grab; cursor: -webkit-grab; }
 #imShowBox .grabbing { cursor: grabbing; cursor: -webkit-grabbing; }
@@ -122,19 +122,19 @@ body.wysiwyg p { margin: 0; line-height: 28px; }
 
 
 /* Page Title */
-#imPgTitle, #imPgTitle a, .imPgTitle, .imPgTitle a { padding-top: 2px; padding-bottom: 2px; margin: 5px 0; font: normal normal bold 14pt 'Raleway'; color: rgba(0, 0, 0, 1); background-color: transparent; text-align: left; text-decoration: none; }
+#imPgTitle, #imPgTitle a, .imPgTitle, .imPgTitle a { padding-top: 2px; padding-bottom: 2px; margin: 5px 0; font: normal normal bold 14pt 'Raleway'; color: rgba(63, 62, 62, 1); background-color: transparent; text-align: left; text-decoration: none; }
 #imPgTitle, .imPgTitle { border-width: 1px; border-style: solid; border-color: transparent transparent transparent transparent; }
 #imPgTitle.imTitleMargin, .imPgTitle.imTitleMargin { margin-left: 6px; margin-right: 6px; }
 #imPgTitle, .imPgTitle { display: none; }
 
 
 /* Headings */
-.imHeading1 {font: normal normal bold 28pt 'Raleway'; color: rgba(0, 0, 0, 1); text-align: left; text-decoration: none;  line-height: 56px; margin: 19px 0px 19px 0px;}
-.imHeading2 {font: normal normal bold 21pt 'Raleway'; color: rgba(0, 0, 0, 1); text-align: left; text-decoration: none;  line-height: 42px; margin: 18px 0px 18px 0px;}
-.imHeading3 {font: normal normal bold 16.3pt 'Raleway'; color: rgba(0, 0, 0, 1); text-align: left; text-decoration: none;  line-height: 32.66667px; margin: 16px 0px 16px 0px;}
-.imHeading4 {font: normal normal bold 14pt 'Raleway'; color: rgba(0, 0, 0, 1); text-align: left; text-decoration: none;  line-height: 28px; margin: 19px 0px 19px 0px;}
-.imHeading5 {font: normal normal bold 11.7pt 'Raleway'; color: rgba(0, 0, 0, 1); text-align: left; text-decoration: none;  line-height: 23.33333px; margin: 19px 0px 19px 0px;}
-.imHeading6 {font: normal normal bold 9.3pt 'Raleway'; color: rgba(0, 0, 0, 1); text-align: left; text-decoration: none;  line-height: 18.66667px; margin: 22px 0px 22px 0px;}
+.imHeading1 {font: normal normal bold 28pt 'Raleway'; color: rgba(63, 62, 62, 1); text-align: left; text-decoration: none;  line-height: 56px; margin: 19px 0px 19px 0px;}
+.imHeading2 {font: normal normal bold 21pt 'Raleway'; color: rgba(63, 62, 62, 1); text-align: left; text-decoration: none;  line-height: 42px; margin: 18px 0px 18px 0px;}
+.imHeading3 {font: normal normal bold 16.3pt 'Raleway'; color: rgba(63, 62, 62, 1); text-align: left; text-decoration: none;  line-height: 32.66667px; margin: 16px 0px 16px 0px;}
+.imHeading4 {font: normal normal bold 14pt 'Raleway'; color: rgba(63, 62, 62, 1); text-align: left; text-decoration: none;  line-height: 28px; margin: 19px 0px 19px 0px;}
+.imHeading5 {font: normal normal bold 11.7pt 'Raleway'; color: rgba(63, 62, 62, 1); text-align: left; text-decoration: none;  line-height: 23.33333px; margin: 19px 0px 19px 0px;}
+.imHeading6 {font: normal normal bold 9.3pt 'Raleway'; color: rgba(63, 62, 62, 1); text-align: left; text-decoration: none;  line-height: 18.66667px; margin: 22px 0px 22px 0px;}
 
 
 /* Breadcrumb */
@@ -151,24 +151,20 @@ body.wysiwyg p { margin: 0; line-height: 28px; }
 .imAbbr:link { background-color: transparent; color: rgba(192, 43, 47, 1); text-decoration: none; }
 .imAbbr:visited { background-color: transparent; color: rgba(192, 43, 47, 1); text-decoration: none; }
 .imAbbr:hover, .imAbbr:active { background-color: transparent; color: rgba(106, 181, 189, 1); border-bottom: 1px dotted rgba(106, 181, 189, 1); text-decoration: none; }
-#imPage input[type=text], #imPage input[type=password], #imPage input[type=email], #imPage input[type=tel], textarea, #imCartContainer .userForm select { font: inherit; border-style: solid; border-width: 1px 1px 1px 1px; border-color: rgba(0, 0, 0, 1) rgba(0, 0, 0, 1) rgba(0, 0, 0, 1) rgba(0, 0, 0, 1); background-color: rgba(224, 224, 224, 1); color: rgba(0, 0, 0, 1); border-top-left-radius: 2px; border-top-right-radius: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px;padding: 2px 1px 2px 1px; box-shadow: none; box-sizing: border-box; }
+#imPage input[type=text], #imPage input[type=password], #imPage input[type=email], #imPage input[type=tel], textarea, #imCartContainer .userForm select { font: inherit; border-style: solid; border-width: 1px 1px 1px 1px; border-color: rgba(169, 169, 169, 1) rgba(169, 169, 169, 1) rgba(169, 169, 169, 1) rgba(169, 169, 169, 1); background-color: rgba(255, 255, 255, 1); color: rgba(0, 0, 0, 1); border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;padding: 10px 1px 10px 1px; box-shadow: none; box-sizing: border-box; }
 #imPage input[type=text].mandatoryInvalid, #imPage input[type=password].mandatoryInvalid, #imPage input[type=email].mandatoryInvalid, #imPage input[type=tel].mandatoryInvalid, textarea.mandatoryInvalid { border-color: red; }
 textarea { resize: none; }
-#imPage input[type=button], #imPage input[type=submit], #imPage input[type=reset], #imPage button.imButton {padding: 2px 4px 2px 4px; cursor: pointer; font: inherit; border-style: solid; border-width: 1px 1px 1px 1px; border-color: rgba(0, 0, 0, 1) rgba(0, 0, 0, 1) rgba(0, 0, 0, 1) rgba(0, 0, 0, 1); background-color: transparent; color: rgba(0, 0, 0, 1); border-style: solid; border-width: 1px 1px 1px 1px; border-color: rgba(0, 0, 0, 1) rgba(0, 0, 0, 1) rgba(0, 0, 0, 1) rgba(0, 0, 0, 1); border-top-left-radius: 2px; border-top-right-radius: 2px; border-bottom-left-radius: 2px; border-bottom-right-radius: 2px;box-sizing: content-box; }
+#imPage input[type=button], #imPage input[type=submit], #imPage input[type=reset], #imPage button.imButton {padding: 10px 4px 10px 4px; cursor: pointer; font: inherit; border-style: solid; border-width: 1px 1px 1px 1px; border-color: rgba(37, 58, 88, 1) rgba(37, 58, 88, 1) rgba(37, 58, 88, 1) rgba(37, 58, 88, 1); background-color: rgba(63, 62, 62, 1); color: rgba(255, 255, 255, 1); border-style: solid; border-width: 1px 1px 1px 1px; border-color: rgba(37, 58, 88, 1) rgba(37, 58, 88, 1) rgba(37, 58, 88, 1) rgba(37, 58, 88, 1); border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;box-sizing: content-box; }
 .search_form input { border-radius: 0; }
 .imNoScript { position: absolute; top: 5px; left: 5%; width: 90%; font: normal normal normal 14pt 'Raleway'; text-align: left; text-decoration: none; }
 
 /* Tip */
-.imTip { position: absolute; z-index: 100201; margin: 0 auto; padding: 10px; background-color: rgba(154, 31, 37, 1); border-style: solid; border-width: 0px 0px 0px 0px; border-color: rgba(37, 58, 88, 1) rgba(37, 58, 88, 1) rgba(37, 58, 88, 1) rgba(37, 58, 88, 1); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px; box-shadow: 1px 1px 1px 0px rgba(128, 128, 128, 1);}
-.imTip { opacity: 0; transition: opacity 200ms, transform 200ms; }
-.imTip.imTipTop { transform: translate(0, -20px); }
-.imTip.imTipBottom { transform: translate(0, 20px); }
-.imTip.imTipLeft { transform: translate(-20px, 0); }
-.imTip.imTipRight { transform: translate(20px, 0); }
-.imTip.imTipVisible { opacity: 1; transform: translate(0, 0); }
-.imTipArrowBorder { border-color: rgba(37, 58, 88, 1); border-width: 10px; border-style: solid; height: 0; width: 0; position: absolute; }
-.imTipArrow { border-color: rgba(154, 31, 37, 1); border-style: solid; border-width: 10px; height: 0; width: 0; position: absolute; }
-.imTipContent { width: 100%; font: normal normal normal 9pt 'Raleway'; color: rgba(224, 224, 224, 1); background-color: rgba(154, 31, 37, 1); text-align: center; text-decoration: none;  }
+.imTip { position: absolute; z-index: 100201; margin: 0 auto; padding: 10px; background-color: rgba(63, 62, 62, 1); border-style: solid; border-width: 0px 0px 0px 0px; border-color: transparent transparent transparent transparent; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; box-shadow: 1px 1px 1px 0px rgba(128, 128, 128, 1);}
+.imTip { opacity: 0; transition: opacity 500ms; }
+.imTip.imTipVisible { opacity: 1; }
+.imTipArrowBorder { border-color: transparent; border-width: 10px; border-style: solid; height: 0; width: 0; position: absolute; }
+.imTipArrow { border-color: rgba(63, 62, 62, 1); border-style: solid; border-width: 10px; height: 0; width: 0; position: absolute; }
+.imTipContent { width: 100%; font: normal normal normal 9pt 'Raleway'; color: rgba(255, 255, 255, 1); background-color: rgba(63, 62, 62, 1); text-align: center; text-decoration: none;  }
 .imTipContent img { margin-bottom: 6px; max-width: 100%; }
 .imTip.textLeft .imTipContent { text-align: left; }
 
@@ -191,9 +187,9 @@ textarea { resize: none; }
 
 
 /* Popup */
-#imGuiPopUp { padding: 10px; position: fixed; background-color: rgba(255, 255, 255, 1); border-style: solid; border-width: 1px 1px 4px 3px; border-color: rgba(255, 255, 255, 1) rgba(255, 255, 255, 1) rgba(0, 0, 0, 1) rgba(0, 0, 0, 1); border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;font: normal normal normal 9pt 'Raleway'; color: rgba(0, 0, 0, 1); background-color: rgba(255, 255, 255, 1); text-align: left; text-decoration: none; }
+#imGuiPopUp { padding: 10px; position: fixed; background-color: rgba(0, 0, 0, 1); border-style: solid; border-width: 1px 1px 1px 1px; border-color: transparent transparent transparent transparent; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px;font: normal normal normal 9pt 'Raleway'; color: rgba(0, 0, 0, 1); background-color: rgba(255, 255, 255, 1); text-align: left; text-decoration: none; }
 .imGuiButton { margin-top: 20px; margin-left: auto; margin-right: auto; text-align: center;  width: 80px; cursor: pointer; background-color: #444; color: white; padding: 5px; font-size: 14px; font-family: Arial; }
-#imGuiPopUpBg { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(255, 255, 255, 1); }
+#imGuiPopUpBg { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background-color: rgba(0, 0, 0, 1); }
 .alertbox { cursor: default; text-align: center; padding: 0; }
 .alertbox .close-button { cursor: pointer; position: absolute; top: 2px; right: 2px; font-weight: bold; cursor: pointer; font-family: Tahoma; }
 .alertbox .target-image { cursor: pointer; margin: 0px auto; }
@@ -225,12 +221,6 @@ textarea { resize: none; }
 .topic-star-fixer-small { height: 16px; }
 .topic-pagination { text-align: center; margin: 7px 0; }
 .variable-star-rating { cursor: pointer; }
-#cookie-law-message {background-color: rgba(40, 40, 40, 1);color: rgba(255, 255, 255, 1);font: normal normal normal 11pt 'Raleway'; ; width:100% !important; max-width:320px; border-radius: 4px; text-align: center;}
-#cookie-law-message .splashContent { padding:25px;}
-#cookie-law-message .imClose, #cookie-law-message .close-button { top:5px; right:5px; margin:0; cursor: pointer;}
-#cookie-law-message .svgClose {height:20px; width:20px; fill:rgba(255, 255, 255, 1); }
-#cookie-law-message .imCloseInn:hover {opacity: 0.8; }
-#cookie-law-message .splashContent > div { display:inline-block; }
 #media-query-to-js { position: absolute; display: none; }@media (min-width: 1150px) {
 	#media-query-to-js { width: 1150px; }
 }
