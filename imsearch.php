@@ -22,7 +22,7 @@
 		
 		
 		<link rel="stylesheet" href="pluginAppObj/imStickyBar_pluginAppObj_07/custom.css" media="screen, print" />
-		<link rel="stylesheet" href="pcss/imsearch.css?17-1-2-0-638305618301838847" media="screen,print" />
+		<link rel="stylesheet" href="pcss/imsearch.css?17-1-2-0-638388090955464951" media="screen,print" />
 		<script src="res/jquery.js?17-1-2-0"></script>
 		<script src="res/x5engine.js?17-1-2-0" data-files-version="17-1-2-0"></script>
 		<script src="pluginAppObj/imHeader_pluginAppObj_03/main.js"></script>
@@ -35,7 +35,7 @@
 			x5engine.boot.push(function () { x5engine.imPageToTop.initializeButton({}); });
 		</script>
 		
-		<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'MDEY3JG7WE ','auto');ga('set', 'anonymizeIp', true);ga('send', 'pageview');</script>
+		<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'MDEY3JG7WE ','auto');ga('send', 'pageview');</script>
 	</head>
 	<body>
 		<div id="imPageExtContainer">
