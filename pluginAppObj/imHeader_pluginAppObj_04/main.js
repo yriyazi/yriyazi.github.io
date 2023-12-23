@@ -1,4 +1,4 @@
-function socialicons_imStickyBar_pluginAppObj_07() {
+function socialicons_imHeader_pluginAppObj_04() {
     
     var containerWidth;
     var btnWidth;
@@ -11,41 +11,41 @@ function socialicons_imStickyBar_pluginAppObj_07() {
         btnWidth = 50;
         btnHeight = 50;
         btnMargin = 5;
-        numBtn = $("#imStickyBar_pluginAppObj_07 .social-icon").length;
+        numBtn = $("#imHeader_pluginAppObj_04 .social-icon").length;
         
         $('#imContent').on('breakpointChangedOrFluid', function (e, breakpoint) {
-            resizeSocials_imStickyBar_pluginAppObj_07();
+            resizeSocials_imHeader_pluginAppObj_04();
         });
-        resizeSocials_imStickyBar_pluginAppObj_07();
+        resizeSocials_imHeader_pluginAppObj_04();
     });
 
-       function resizeSocials_imStickyBar_pluginAppObj_07() {
+       function resizeSocials_imHeader_pluginAppObj_04() {
            
            /*reset margins*/
-           $("#imStickyBar_pluginAppObj_07 .social-icon").removeClass("last-item-row");
-           $("#imStickyBar_pluginAppObj_07 .social-icon").removeClass("last-row");
-           $("#imStickyBar_pluginAppObj_07 .social-icon").removeClass("one-row");
+           $("#imHeader_pluginAppObj_04 .social-icon").removeClass("last-item-row");
+           $("#imHeader_pluginAppObj_04 .social-icon").removeClass("last-row");
+           $("#imHeader_pluginAppObj_04 .social-icon").removeClass("one-row");
                  
-           containerWidth = $('#imStickyBar_pluginAppObj_07').width();
+           containerWidth = $('#imHeader_pluginAppObj_04').width();
            
            var buttonPerRow = 1;
            if("horizontal" === "horizontal")
                 buttonPerRow = getButtonPerRow();
                
            if(buttonPerRow == 1){
-               $("#imStickyBar_pluginAppObj_07 .social-icon:last-child").addClass("last-row");
+               $("#imHeader_pluginAppObj_04 .social-icon:last-child").addClass("last-row");
            }
            else if(numBtn == buttonPerRow){
-               $("#imStickyBar_pluginAppObj_07 .social-icon").addClass("last-row");
-               $("#imStickyBar_pluginAppObj_07 .social-icon:last-child").addClass("last-item-row");  
+               $("#imHeader_pluginAppObj_04 .social-icon").addClass("last-row");
+               $("#imHeader_pluginAppObj_04 .social-icon:last-child").addClass("last-item-row");  
             }
            else{
-               $("#imStickyBar_pluginAppObj_07 .social-icon:nth-child(" + buttonPerRow + "n)").addClass("last-item-row");
-               $("#imStickyBar_pluginAppObj_07 .social-icon:nth-child(n+" + parseInt(buttonPerRow+1) + ")").addClass("last-row");
+               $("#imHeader_pluginAppObj_04 .social-icon:nth-child(" + buttonPerRow + "n)").addClass("last-item-row");
+               $("#imHeader_pluginAppObj_04 .social-icon:nth-child(n+" + parseInt(buttonPerRow+1) + ")").addClass("last-row");
            }
              
            var fact = containerWidth < btnWidth ? containerWidth / btnWidth : 1;
-           $('#imStickyBar_pluginAppObj_07 .social-icon, #imStickyBar_pluginAppObj_07 .sides-container').css({
+           $('#imHeader_pluginAppObj_04 .social-icon, #imHeader_pluginAppObj_04 .sides-container').css({
                width: btnWidth * fact,
                height: btnHeight * fact
            });

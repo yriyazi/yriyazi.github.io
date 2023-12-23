@@ -1,88 +1,88 @@
-#soc_imStickyBar_pluginAppObj_07 .wrapper{
+#soc_imHeader_pluginAppObj_04 .wrapper{
     display: inline-block;
     vertical-align: bottom;
 	
 }
 
-#soc_imStickyBar_pluginAppObj_07 .wrapper a{
+#soc_imHeader_pluginAppObj_04 .wrapper a{
 	display: block;
 	width: 100%;
 	height: 100%;
 	text-decoration: none;
 	overflow: hidden !important;
-	-webkit-border-top-left-radius: 100px;
-	-webkit-border-top-right-radius: 100px;
-	-webkit-border-bottom-right-radius: 100px;
-	-webkit-border-bottom-left-radius: 100px;
-	-moz-border-radius-topleft: 100px;
-	-moz-border-radius-topright: 100px;
-	-moz-border-radius-bottomright: 100px;
-	-moz-border-radius-bottomleft: 100px;
-	border-top-left-radius: 100px;
-	border-top-right-radius: 100px;
-	border-bottom-right-radius: 100px;
-	border-bottom-left-radius: 100px;
+	-webkit-border-top-left-radius: 0px;
+	-webkit-border-top-right-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-topright: 0px;
+	-moz-border-radius-bottomright: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
 	background-color: transparent;
 	z-index: 1;
 	position: relative;
 }
 
-#soc_imStickyBar_pluginAppObj_07 .social-icon{
+#soc_imHeader_pluginAppObj_04 .social-icon{
 	width: 50px;
 	height: 50px;
-	-webkit-border-top-left-radius: 100px;
-	-webkit-border-top-right-radius: 100px;
-	-webkit-border-bottom-right-radius: 100px;
-	-webkit-border-bottom-left-radius: 100px;
-	-moz-border-radius-topleft: 100px;
-	-moz-border-radius-topright: 100px;
-	-moz-border-radius-bottomright: 100px;
-	-moz-border-radius-bottomleft: 100px;
-	border-top-left-radius: 100px;
-	border-top-right-radius: 100px;
-	border-bottom-right-radius: 100px;
-	border-bottom-left-radius: 100px;
+	-webkit-border-top-left-radius: 0px;
+	-webkit-border-top-right-radius: 0px;
+	-webkit-border-bottom-right-radius: 0px;
+	-webkit-border-bottom-left-radius: 0px;
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-topright: 0px;
+	-moz-border-radius-bottomright: 0px;
+	-moz-border-radius-bottomleft: 0px;
+	border-top-left-radius: 0px;
+	border-top-right-radius: 0px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 0px;
 	display: block;
 	text-align: center;
 	overflow: hidden;
     margin: 0 5px 5px 0;
 }
 
-#soc_imStickyBar_pluginAppObj_07 .social-icon.last-item-row {
+#soc_imHeader_pluginAppObj_04 .social-icon.last-item-row {
 	margin-right: 0;
 }
 
-#soc_imStickyBar_pluginAppObj_07 .social-icon.one-row {
+#soc_imHeader_pluginAppObj_04 .social-icon.one-row {
 	margin-left: 1px;
 	margin-right: 1px;
 }
 
-#soc_imStickyBar_pluginAppObj_07 .social-icon.last-row {
+#soc_imHeader_pluginAppObj_04 .social-icon.last-row {
 	margin-bottom: 0;
 }
 
-#soc_imStickyBar_pluginAppObj_07 .horizontal .social-icon{
+#soc_imHeader_pluginAppObj_04 .horizontal .social-icon{
 	float: left;
 }
 
-#soc_imStickyBar_pluginAppObj_07 .social-icon svg{
+#soc_imHeader_pluginAppObj_04 .social-icon svg{
 	width: 100%;
 	height: 100%;
 	top: 0%;
 	position: relative;
 }
-#soc_imStickyBar_pluginAppObj_07 .flat .social-icon svg{
+#soc_imHeader_pluginAppObj_04 .flat .social-icon svg{
 	fill: rgb(0,0,0);
 }
 
-#soc_imStickyBar_pluginAppObj_07 .social-icon .fallbacktext{
+#soc_imHeader_pluginAppObj_04 .social-icon .fallbacktext{
 	display: none;
 }
-.no-svg #soc_imStickyBar_pluginAppObj_07 .social-icon svg{
+.no-svg #soc_imHeader_pluginAppObj_04 .social-icon svg{
 	display: none;
 }
 
-.no-svg #soc_imStickyBar_pluginAppObj_07 .social-icon .fallbacktext{
+.no-svg #soc_imHeader_pluginAppObj_04 .social-icon .fallbacktext{
 	display: block;
 	line-height: 50px;
 	font-family: Arial, sans-serif;
@@ -95,7 +95,7 @@
 /*** EFFECTS ***/
 
 /* GROW */
-#soc_imStickyBar_pluginAppObj_07 .grow .social-icon{
+#soc_imHeader_pluginAppObj_04 .grow .social-icon{
 	vertical-align: middle;
 	-webkit-transform: perspective(1px) translateZ(0);
 	transform: perspective(1px) translateZ(0);
@@ -105,13 +105,13 @@
 	-webkit-transition-property: transform;
 	transition-property: transform;
 }
-#soc_imStickyBar_pluginAppObj_07 .grow .social-icon:hover{
+#soc_imHeader_pluginAppObj_04 .grow .social-icon:hover{
 	-webkit-transform: scale(1.1);
 	transform: scale(1.1);
 }
 
 /* SHRINK */
-#soc_imStickyBar_pluginAppObj_07 .shrink .social-icon{
+#soc_imHeader_pluginAppObj_04 .shrink .social-icon{
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -121,7 +121,7 @@
   -webkit-transition-property: transform;
   transition-property: transform;
 }
-#soc_imStickyBar_pluginAppObj_07 .shrink .social-icon:hover{
+#soc_imHeader_pluginAppObj_04 .shrink .social-icon:hover{
   -webkit-transform: scale(0.9);
   transform: scale(0.9);
 }
@@ -180,13 +180,13 @@
 }
 
 /* SHAKE */
-#soc_imStickyBar_pluginAppObj_07 .shake .social-icon{
+#soc_imHeader_pluginAppObj_04 .shake .social-icon{
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px transparent;
 }
-#soc_imStickyBar_pluginAppObj_07 .shake .social-icon:hover{
+#soc_imHeader_pluginAppObj_04 .shake .social-icon:hover{
   -webkit-animation-name: hvr-buzz-out;
   animation-name: hvr-buzz-out;
   -webkit-animation-duration: 0.3s;
@@ -199,7 +199,7 @@
 
 /* FLOAT */
 
-#soc_imStickyBar_pluginAppObj_07 .float .social-icon{
+#soc_imHeader_pluginAppObj_04 .float .social-icon{
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -211,7 +211,7 @@
   transition-property: transform;
 }
 
-#soc_imStickyBar_pluginAppObj_07 .float .social-icon:before{
+#soc_imHeader_pluginAppObj_04 .float .social-icon:before{
   pointer-events: none;
   position: absolute;
   z-index: -1;
@@ -229,13 +229,13 @@
   -webkit-transition-property: transform, opacity;
   transition-property: transform, opacity;
 }
-#soc_imStickyBar_pluginAppObj_07 .float .social-icon:hover {
+#soc_imHeader_pluginAppObj_04 .float .social-icon:hover {
   overflow: initial;
   -webkit-transform: translateY(-5px);
   transform: translateY(-5px);
   /* move the element up by 5px */
 }
-#soc_imStickyBar_pluginAppObj_07 .float .social-icon:hover:before {
+#soc_imHeader_pluginAppObj_04 .float .social-icon:hover:before {
   opacity: 1;
   -webkit-transform: translateY(5px);
   transform: translateY(5px);
