@@ -2,7 +2,7 @@
 <!DOCTYPE html><!-- HTML5 -->
 <html prefix="og: http://ogp.me/ns#" lang="en-GB" dir="ltr">
 	<head>
-		<title>Search - yRiyazi</title>
+		<title>Search - Yassin Riyazi</title>
 		<meta charset="utf-8" />
 		<!--[if IE]><meta http-equiv="ImageToolbar" content="False" /><![endif]-->
 		<meta name="author" content="Yassin Riyazi" />
@@ -11,7 +11,7 @@
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="https://yriyazi.github.io/imsearch.php" />
 		<meta property="og:title" content="Search" />
-		<meta property="og:site_name" content="yRiyazi" />
+		<meta property="og:site_name" content="Yassin Riyazi" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		
 		<link rel="stylesheet" href="style/reset.css?17-1-2-0" media="screen,print" />
@@ -22,7 +22,7 @@
 		
 		
 		<link rel="stylesheet" href="pluginAppObj/imStickyBar_pluginAppObj_07/custom.css" media="screen, print" />
-		<link rel="stylesheet" href="pcss/imsearch.css?17-1-2-0-638388090955464951" media="screen,print" />
+		<link rel="stylesheet" href="pcss/imsearch.css?17-1-2-0-638388889087809362" media="screen,print" />
 		<script src="res/jquery.js?17-1-2-0"></script>
 		<script src="res/x5engine.js?17-1-2-0" data-files-version="17-1-2-0"></script>
 		<script src="pluginAppObj/imHeader_pluginAppObj_03/main.js"></script>
@@ -34,7 +34,7 @@
 			x5engine.utils.currentPagePath = 'imsearch.php';
 			x5engine.boot.push(function () { x5engine.imPageToTop.initializeButton({}); });
 		</script>
-		
+		<link rel="icon" href="favicon.ico?17-1-2-0-638388889087809362" type="image/vnd.microsoft.icon" />
 		<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'MDEY3JG7WE ','auto');ga('send', 'pageview');</script>
 	</head>
 	<body>
@@ -44,7 +44,7 @@
 				<div id="imFooterBg"></div>
 				<div id="imPage">
 					<header id="imHeader">
-						<h1 class="imHidden">Search - yRiyazi</h1>
+						<h1 class="imHidden">Search - Yassin Riyazi</h1>
 						<div id="imHeaderObjects"><div id="imHeader_pluginAppObj_03_wrapper" class="template-object-wrapper"><div id="imHeader_pluginAppObj_03">
             <div id="soc_imHeader_pluginAppObj_03">
                 <div class="wrapper horizontal original grow">
