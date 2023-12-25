@@ -145,10 +145,10 @@ body.wysiwyg p { margin: 0; line-height: 22px; }
 
 /* Links */
 .imCssLink:link, .imCssLink { background-color: transparent; color: rgba(0, 64, 255, 1); text-decoration: underline; transition: color 0.2s linear, background-color 0.2s linear;}
-.imCssLink:visited { background-color: transparent; color: rgba(255, 0, 0, 1); text-decoration: none; }
+.imCssLink:visited { background-color: transparent; color: rgba(255, 0, 0, 1); text-decoration: underline; }
 .imCssLink:hover, .imCssLink:active, .imCssLink:hover, .imCssLink:active { background-color: rgba(255, 223, 128, 1); color: rgba(0, 64, 255, 1); text-decoration: none; }
 .imAbbr:link { background-color: transparent; color: rgba(0, 64, 255, 1); border-bottom: 1px dotted rgba(0, 64, 255, 1); text-decoration: none; }
-.imAbbr:visited { background-color: transparent; color: rgba(255, 0, 0, 1); text-decoration: none; }
+.imAbbr:visited { background-color: transparent; color: rgba(255, 0, 0, 1); border-bottom: 1px dotted rgba(255, 0, 0, 1); text-decoration: none; }
 .imAbbr:hover, .imAbbr:active { background-color: rgba(255, 223, 128, 1); color: rgba(0, 64, 255, 1); text-decoration: none; }
 #imPage input[type=text], #imPage input[type=password], #imPage input[type=email], #imPage input[type=tel], textarea, #imCartContainer .userForm select { font: inherit; border-style: solid; border-width: 1px 1px 1px 1px; border-color: rgba(159, 171, 176, 1) rgba(159, 171, 176, 1) rgba(159, 171, 176, 1) rgba(159, 171, 176, 1); background-color: rgba(255, 255, 255, 1); color: rgba(0, 0, 0, 1); border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;padding: 5px 5px 5px 5px; box-shadow: none; box-sizing: border-box; }
 #imPage input[type=text].mandatoryInvalid, #imPage input[type=password].mandatoryInvalid, #imPage input[type=email].mandatoryInvalid, #imPage input[type=tel].mandatoryInvalid, textarea.mandatoryInvalid { border-color: red; }
