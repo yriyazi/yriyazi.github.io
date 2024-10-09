@@ -1,4 +1,4 @@
-/* Global page styles */
+/* /* Global page styles
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -51,4 +51,107 @@ ul {
 li {
     margin: 10px 0;
     font-size: 20px;
+} */
+
+ */
+
+ /* Global page styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+h1, h2 {
+    font-family: 'Lora', serif;
+    color: #222;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Blog post and contents page styling */
+.blog-post, .contents-page {
+    background-color: #fff;
+    border: 5px solid red;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 900px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.blog-post:hover, .contents-page:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* SVG container styling */
+.svg-container {
+    text-align: center;
+    margin: 30px 0;
+}
+
+/* Text styling */
+p {
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Link styling */
+a {
+    color: #e63946;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #d62828;
+}
+
+/* List styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 15px 0;
+    font-size: 20px;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.2s ease;
+}
+
+li:hover {
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+    .blog-post, .contents-page {
+        padding: 20px;
+        margin: 20px auto;
+        max-width: 95%;
+    }
+
+    h1, h2 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    li {
+        font-size: 18px;
+    }
 }

@@ -1,0 +1,18 @@
+# Allow all search engines to index the main site
+User-agent: *
+Allow: /
+
+# Block access to specific directories or files
+Disallow: /private/
+Disallow: /admin/
+
+# Block access to specific file types
+Disallow: /*.php$
+Disallow: /*.cgi$
+Disallow: /*.log$
+
+# Crawl delay for search engines to avoid server overload (optional)
+Crawl-delay: 10
+
+# Sitemap location (add your actual sitemap URL if available)
+Sitemap: https://yriyazi.github.io/sitemap.xml

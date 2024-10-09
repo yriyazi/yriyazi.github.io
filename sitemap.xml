@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+    <!-- Homepage -->
+    <url>
+        <loc>https://yriyazi.github.io/</loc>
+        <lastmod>2024-05-01</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <!-- Blog Contents -->
+    <url>
+        <loc>https://yriyazi.github.io/Home/contents.html</loc>
+        <lastmod>2024-10-01</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Blog post 1 -->
+    <url>
+        <loc>https://yriyazi.github.io/Home/Blogs/post1-Basis_definitions.html</loc>
+        <lastmod>2024-09-25</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Blog post 2 -->
+    <url>
+        <loc>https://yriyazi.github.io/Home/Blogs/post2-Multivariable_calculus.html</loc>
+        <lastmod>2024-09-10</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- Add more blog posts here as necessary -->
+     
+</urlset>

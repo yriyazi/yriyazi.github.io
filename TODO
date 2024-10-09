@@ -1,10 +1,7 @@
-Ckeck the links, There are wrong!!!!!!!!!!
-Add littile images og projects
-
-Add Github as social media
 Add short version of CV
-Add some interesing project
 
-Add icon
+After adding each post
+    Update sitemap
+    Update Home/contents.html
 
-Add weblogs
+Make a python script to automate the post generating process.
