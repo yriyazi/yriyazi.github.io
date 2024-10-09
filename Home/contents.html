@@ -7,8 +7,23 @@
 
     <!-- Link to external CSS -->
     <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/Heading.css">
+
+    <!-- Script for glowing stars -->
+    <script src="../JS/stars.js" defer></script>
+
+    <!-- Script for toggling modes -->
+    <script src="../JS/toggle.js" defer></script>
+
 </head>
 <body>
+    <!-- Buttons to toggle stars and reader mode -->
+    <div class="controls">
+        <button id="toggleStars">Turn Off Stars</button>
+        <button id="toggleTheme">Switch to Light Mode</button>
+    </div>
+    <!-- Container for glowing stars -->
+    <div id="stars"></div>
 
     <div class="contents-page">
         <h1>Contents</h1>
@@ -22,6 +37,12 @@
             <!-- Add more blog post links here -->
         </ul>
     </div>
+    
+    
+
+    <footer>
+        <p>To boldly go where no one has gone before.</p>
+    </footer>
 
 </body>
 </html>

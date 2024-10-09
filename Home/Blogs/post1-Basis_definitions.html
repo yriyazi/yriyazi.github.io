@@ -4,15 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Basic definitions of calculus</title>
-
+    
     <!-- Link to external CSS -->
     <link rel="stylesheet" href="../../CSS/style.css">
+    <link rel="stylesheet" href="../../CSS/Heading.css">
 
     <!-- MathJax for rendering LaTeX -->
     <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> -->
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <!-- Script for glowing stars -->
+    <script src="../../JS/stars.js" defer></script>
+    <!-- Script for toggling modes -->
+    <script src="../../JS/toggle.js" defer></script>
+
 </head>
 <body>
+    <!-- Container for glowing stars -->
+    <div id="stars"></div>
+    <!-- Navigation Header -->
+    <header>
+        <nav>
+            <div class="controls">
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../contents.html">Contents</a></li>
+
+                    <li><button id="toggleStars">Turn Off Stars</button>
+                    <li><button id="toggleTheme">Switch to Light Mode</button></li>    
+                </ul>
+            </div>
+        </nav>
+    </header>
 
     <div class="blog-post">
         <h1>A few definitions</h1>
@@ -39,6 +62,10 @@
 
         <p>To boldly go where has no one gone before.</p>
     </div>
+
+    <footer>
+        <p>To boldly go where no one has gone before.</p>
+    </footer>
 
 </body>
 </html>

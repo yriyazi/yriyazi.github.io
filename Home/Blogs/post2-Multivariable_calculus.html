@@ -7,37 +7,106 @@
 
     <!-- Link to external CSS -->
     <link rel="stylesheet" href="../../CSS/style.css">
+    <link rel="stylesheet" href="../../CSS/Heading.css">
 
     <!-- MathJax for rendering LaTeX -->
     <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> -->
     <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <!-- Script for glowing stars -->
+    <script src="../../JS/stars.js" defer></script>
+    <!-- Script for toggling modes -->
+    <script src="../../JS/toggle.js" defer></script>
+
 </head>
 <body>
+    <!-- Container for glowing stars -->
+    <div id="stars"></div>
+    <!-- Navigation Header -->
+    <header>
+        <nav>
+            <div class="controls">
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../contents.html">Contents</a></li>
 
-    <div class="blog-post">
-        <h1>A few definitions</h1>
-            <p>Welcome to this post on a topic in calculus and analysis!</p> 
-            <p>Here, we'll discuss a key concept.</p>
+                    <li><button id="toggleStars">Turn Off Stars</button>
+                    <li><button id="toggleTheme">Switch to Light Mode</button></li>    
+                </ul>
+            </div>
+        </nav>
+    </header>
+    
+    
 
-        <h2>History</h2>
+    <div class="blog-post" id="page">
+        <h1 class="countheads">Multi-variable Calculus</h1>
+            <p>Welcome to this post on a topic in calculus.</p> 
+            <p>Here, I want to discuss functions on \(\mathbb{R}^n\) and it is an <u>extension to \(\mathbb{R}\)eal analysis</u>.</p>
 
-        <h2>Necessity</h2>
+        <h2>Introduction</h2>
+            <p>In essence generalizing one calculus of one variable to more is the this topic.</p>
+            <p>Some funny overlap between Multivariable calculus and Linear algebra is that they both work with functions/maps \(f:\mathbb{R}^n \rightarrow \mathbb{R}^m\)</p>
+
+            <p>This set of definitions will provide us with means to later understand:</p>
+            <ul>
+                <li>Complex Analysis</li>
+                <li>Functional Analysis</li>
+                <li>Manifolds</li>
+            </ul>
+
+            
+
+        <h2>Continuity</h2>
+            <p>
+                We first need to revisit the continuity definition and derivatives. In the Real Analysis the \(\epsilon , \delta\) 
+                notation has been used. 
+            </p>
+
+            From Wikipedia:
+            <p style="color: brown;">
+                Suppose \(f:\mathbb{R} \rightarrow \mathbb{R}\) is a function defined on the real line, and there are two real numbers
+                p and L. One would say that the limit of f, as x approaches p, is L and written
+                \[\lim_{x \to p} f(x) = L\]
+                or alternatively, say f(x) tends to L as x tends to p, and written:
+                \[f(x) \to L \text{ as } x \to p,\]
+
+                if the following property holds: 
+                
+                for every real ε > 0, there exists a real δ > 0 such that for all real x,
+                 0 < |x − p| < δ implies |f(x) − L| < ε. Symbolically,
+
+                \[(\forall \varepsilon > 0 ) \, (\exists \delta > 0) \, (\forall x \in \mathbb{R}) \, (0 < |x - p| < \delta \implies |f(x) - L| < \varepsilon).\]
+            </p>
+
+        <h2>Taylor's series</h2>
+
+        <h2>Implicit Function Theorem</h2>
+
+        <h2>Method of Lagrange multiplier</h2>
 
         <h2>Integral</h2>
         
         <h2>Derivatives</h2>
 
+            <h3>Partial derivatives</h3>
+
+            <h3>Directional derivatives</h3>
+
+            <h3>Total derivatives</h3>
+
         <h2>Relation (fundamental lemma)</h2>
         
-            
+            <!--             
             <p>\[
                 \int_0^1 x^2 \, dx = \frac{1}{3}
-            \]</p>
+            \]</p> -->
 
-
-
-        <p>To boldly go where has no one gone before.</p>
     </div>
+
+    <footer>
+        <p>To boldly go where no one has gone before.</p>
+    </footer>
 
 </body>
 </html>
