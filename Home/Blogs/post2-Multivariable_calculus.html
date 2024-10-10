@@ -8,6 +8,8 @@
     <!-- Link to external CSS -->
     <link rel="stylesheet" href="../../CSS/style.css">
     <link rel="stylesheet" href="../../CSS/Heading.css">
+    <link rel="stylesheet" href="../../CSS/Paragraph.css">
+    <link rel="stylesheet" href="../../CSS/Notes.css">
 
     <!-- MathJax for rendering LaTeX -->
     <!-- <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script> -->
@@ -17,6 +19,27 @@
     <script src="../../JS/stars.js" defer></script>
     <!-- Script for toggling modes -->
     <script src="../../JS/toggle.js" defer></script>
+
+
+
+    
+    <style>
+        /* body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        } */
+        canvas {
+            border: 1px solid black;
+            background-color: #f9f9f9;
+            margin-top: 1px;
+        }
+        .controls {
+            margin-top: 1px;
+        }
+        label, input {
+            font-size: 1.2em;
+        }
+    </style>
 
 </head>
 <body>
@@ -59,28 +82,75 @@
 
         <h2>Continuity</h2>
             <p>
-                We first need to revisit the continuity definition and derivatives. In the Real Analysis the \(\epsilon , \delta\) 
+                We first need to revisit the continuity definition and derivatives. In the Real Analysis the \(\epsilon - \delta\) 
                 notation has been used. 
             </p>
 
-            From Wikipedia:
-            <p style="color: brown;">
-                Suppose \(f:\mathbb{R} \rightarrow \mathbb{R}\) is a function defined on the real line, and there are two real numbers
-                p and L. One would say that the limit of f, as x approaches p, is L and written
-                \[\lim_{x \to p} f(x) = L\]
-                or alternatively, say f(x) tends to L as x tends to p, and written:
-                \[f(x) \to L \text{ as } x \to p,\]
+            <div class="flashback-note">
+                <h2>Flashback (From Wikipedia)</h2>
+                <p>
+                    Suppose \(f:\mathbb{R} \rightarrow \mathbb{R}\) is a function defined on the real line, and there are two real numbers
+                    p and L.
+                </p>
+                <p>    
+                    One would say that the limit of \(f(x)\), as \(x\) approaches p, is L and written
+                    \[\lim_{x \to p} f(x) = L\]
+                    or alternatively, say \(f(x)\) tends to L as x tends to p, and written:
+                    \[f(x) \to L \text{ as } x \to p,\]
+                </p>
+                <p>
 
-                if the following property holds: 
+                </p>
+                    If the following property holds: 
+                <p>
+                    for every real ε > 0, there exists a real δ > 0 such that for all real x,
+                     0 < |x − p| < δ implies |f(x) − L| < ε. 
+                </p>
                 
-                for every real ε > 0, there exists a real δ > 0 such that for all real x,
-                 0 < |x − p| < δ implies |f(x) − L| < ε. Symbolically,
+                <p>
+                    Symbolically,
+                    \[ \forall \varepsilon > 0, \quad \exists \delta > 0, \quad \forall x \in \mathbb{R} \, \]
+                    \[0 < |x - p| < \delta \implies |f(x) - L| < \varepsilon \]
+                </p>
+                <canvas id="limitCanvas" width="300" height="200"></canvas>
+                <div class="controls">
+                    <label for="fx">f(x) = </label>
+                    <input type="text" id="fx" value="Math.sin(x)">
+                    <label for="a"> at x = </label>
+                    <input type="number" id="a" value="1" step="0.01">
+                    <label for="epsilon">ε = </label>
+                    <input type="number" id="epsilon" value="0.5" step="0.01">
+                    <button onclick="startAnimation()">Start Animation</button>
+                </div>
+                <script src="epsilonDeltaAnimation.js"></script>    
+            </div>
 
-                \[(\forall \varepsilon > 0 ) \, (\exists \delta > 0) \, (\forall x \in \mathbb{R}) \, (0 < |x - p| < \delta \implies |f(x) - L| < \varepsilon).\]
+        <h2>
+            Distances
+        </h2>
+            <p>
+                As show with tha animation, it is crucial to have the means to measure distances. It is required to 
+                have a general idea directions. Look <a href="3D_difference.html">Here</a></li> 
             </p>
+            
 
         <h2>Taylor's series</h2>
 
+        <div class="lemma-note">
+            <h2>Lemma 1.1</h2>
+            <p>Let \( f \) be a continuous real-valued function on a closed interval \([a, b]\). Then, \( f \) attains both its maximum and minimum on \([a, b]\).</p>
+        </div>
+        
+        <div class="theorem-note">
+            <h2>Theorem 2.1</h2>
+            <p>If \( f \) is differentiable on \([a, b]\) and \( f'(x) = 0 \) for all \( x \in [a, b] \), then \( f \) is constant on \([a, b]\).</p>
+        </div>
+        
+        <div class="flashback-note">
+            <h2>Flashback</h2>
+            <p>Recall that in previous lessons, we explored the concept of continuous functions and their behavior on closed intervals.</p>
+        </div>
+        
         <h2>Implicit Function Theorem</h2>
 
         <h2>Method of Lagrange multiplier</h2>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Euclidean Distance Visualization</title>
+    <style>
+        body { margin: 0; }
+        canvas { display: block; }
+    </style>
+</head>
+<body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script>
+        // Scene setup
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ antialias: true });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        document.body.appendChild(renderer.domElement);
+
+        // Orbit controls
+        const controls = new THREE.OrbitControls(camera, renderer.domElement);
+        
+        // Axes Helper
+        const axesHelper = new THREE.AxesHelper(5);
+        scene.add(axesHelper);
+
+        // Points in 3D space
+        const pointA = new THREE.Vector3(1, 1, 1);
+        const pointB = new THREE.Vector3(4, 3, 2);
+
+        // Euclidean distance (d) = √((x2 - x1)^2 + (y2 - y1)^2 + (z2 - z1)^2)
+        const distance = pointA.distanceTo(pointB);
+        console.log("Euclidean distance:", distance);
+
+        // Materials for points and lines
+        const pointMaterial = new THREE.MeshBasicMaterial({ color: 0xff0000 });
+        const lineMaterialX = new THREE.LineBasicMaterial({ color: 0x00ff00 });
+        const lineMaterialY = new THREE.LineBasicMaterial({ color: 0x0000ff });
+        const lineMaterialZ = new THREE.LineBasicMaterial({ color: 0xffff00 });
+
+        // Create spheres for Point A and Point B
+        const sphereGeometry = new THREE.SphereGeometry(0.1, 32, 32);
+
+        const pointASphere = new THREE.Mesh(sphereGeometry, pointMaterial);
+        pointASphere.position.copy(pointA);
+        scene.add(pointASphere);
+
+        const pointBSphere = new THREE.Mesh(sphereGeometry, pointMaterial);
+        pointBSphere.position.copy(pointB);
+        scene.add(pointBSphere);
+
+        // Create lines to represent the x, y, and z differences
+        // X difference line
+        const pointsX = [];
+        pointsX.push(pointA);
+        pointsX.push(new THREE.Vector3(pointB.x, pointA.y, pointA.z));
+        const geometryX = new THREE.BufferGeometry().setFromPoints(pointsX);
+        const lineX = new THREE.Line(geometryX, lineMaterialX);
+        scene.add(lineX);
+
+        // Y difference line
+        const pointsY = [];
+        pointsY.push(new THREE.Vector3(pointB.x, pointA.y, pointA.z));
+        pointsY.push(new THREE.Vector3(pointB.x, pointB.y, pointA.z));
+        const geometryY = new THREE.BufferGeometry().setFromPoints(pointsY);
+        const lineY = new THREE.Line(geometryY, lineMaterialY);
+        scene.add(lineY);
+
+        // Z difference line
+        const pointsZ = [];
+        pointsZ.push(new THREE.Vector3(pointB.x, pointB.y, pointA.z));
+        pointsZ.push(pointB);
+        const geometryZ = new THREE.BufferGeometry().setFromPoints(pointsZ);
+        const lineZ = new THREE.Line(geometryZ, lineMaterialZ);
+        scene.add(lineZ);
+
+        // Arrow for the vector from point A to point B
+        const arrowDirection = new THREE.Vector3();
+        arrowDirection.subVectors(pointB, pointA).normalize();
+        const arrowLength = pointA.distanceTo(pointB);
+        const arrowHelper = new THREE.ArrowHelper(arrowDirection, pointA, arrowLength, 0xff0000);
+        scene.add(arrowHelper);
+
+        // Labels for x, y, z differences (using simple text)
+        const labelDivX = createLabelDiv(`Δx = ${(pointB.x - pointA.x).toFixed(2)}`, 'labelX', 0x00ff00);
+        const labelDivY = createLabelDiv(`Δy = ${(pointB.y - pointA.y).toFixed(2)}`, 'labelY', 0x0000ff);
+        const labelDivZ = createLabelDiv(`Δz = ${(pointB.z - pointA.z).toFixed(2)}`, 'labelZ', 0xffff00);
+
+        function createLabelDiv(text, id, color) {
+            const div = document.createElement('div');
+            div.className = 'label';
+            div.style.position = 'absolute';
+            div.style.backgroundColor = `rgba(${(color >> 16) & 255}, ${(color >> 8) & 255}, ${color & 255}, 0.7)`;
+            div.style.padding = '2px';
+            div.style.borderRadius = '5px';
+            div.style.fontSize = '12px';
+            div.style.color = '#fff';
+            div.innerHTML = text;
+            document.body.appendChild(div);
+            return div;
+        }
+
+        function updateLabels() {
+            const posX = toScreenPosition(new THREE.Vector3(pointB.x, pointA.y, pointA.z), camera);
+            const posY = toScreenPosition(new THREE.Vector3(pointB.x, pointB.y, pointA.z), camera);
+            const posZ = toScreenPosition(pointB, camera);
+
+            labelDivX.style.left = `${posX.x}px`;
+            labelDivX.style.top = `${posX.y}px`;
+
+            labelDivY.style.left = `${posY.x}px`;
+            labelDivY.style.top = `${posY.y}px`;
+
+            labelDivZ.style.left = `${posZ.x}px`;
+            labelDivZ.style.top = `${posZ.y}px`;
+        }
+
+        function toScreenPosition(vector, camera) {
+            const widthHalf = 0.5 * renderer.context.canvas.width;
+            const heightHalf = 0.5 * renderer.context.canvas.height;
+
+            const vectorClone = vector.clone();
+            vectorClone.project(camera);
+
+            return {
+                x: (vectorClone.x * widthHalf) + widthHalf,
+                y: -(vectorClone.y * heightHalf) + heightHalf
+            };
+        }
+
+        // Set camera position and animate
+        camera.position.set(5, 5, 5);
+        camera.lookAt(0, 0, 0);
+
+        function animate() {
+            requestAnimationFrame(animate);
+            controls.update();
+            renderer.render(scene, camera);
+            updateLabels();
+        }
+
+        animate();
+
+        // Resize handling
+        window.addEventListener('resize', () => {
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+        });
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,128 @@
+/* Wider sticky note style for lemma */
+.lemma-note {
+    background-color: #c5e384; /* Light green background for lemma */
+    padding: 20px;
+    border: 2px solid #8fbf33; /* Darker green border */
+    width: 450px; /* Wider sticky note */
+    margin: 20px auto;
+    font-family: 'Times New Roman', serif;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Adds shadow for depth */
+    transform: rotate(-2deg); /* Slight tilt to look like a sticky note */
+    position: relative;
+    border-radius: 10px;
+    color: #333;
+}
+
+/* Pin effect for lemma */
+.lemma-note::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #ffcc00;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Lemma title styling */
+.lemma-note h2 {
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+/* Lemma content styling */
+.lemma-note p {
+    text-align: justify;
+    margin: 0;
+}
+
+/* Sticky note style for theorem */
+.theorem-note {
+    background-color: #f7e09e; /* Light yellow background for theorem */
+    padding: 20px;
+    border: 2px solid #d9b953; /* Darker yellow/brown border */
+    width: 450px;
+    margin: 20px auto;
+    font-family: 'Times New Roman', serif;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transform: rotate(1deg); /* Slight tilt in the opposite direction */
+    position: relative;
+    border-radius: 10px;
+    color: #333;
+}
+
+/* Pin effect for theorem */
+.theorem-note::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #ff6600;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Theorem title styling */
+.theorem-note h2 {
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+/* Theorem content styling */
+.theorem-note p {
+    text-align: justify;
+    margin: 0;
+}
+
+/* Sticky note style for flashback */
+.flashback-note {
+    background-color: #ffcccb; /* Light red background for flashback */
+    padding: 20px;
+    border: 2px solid #e06666; /* Darker red border */
+    width: 450px;
+    margin: 20px auto;
+    font-family: 'Times New Roman', serif;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    transform: rotate(-1deg); /* Slight tilt */
+    position: relative;
+    border-radius: 10px;
+    color: #333;
+}
+
+/* Pin effect for flashback */
+.flashback-note::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    background-color: #ff3300;
+    border-radius: 50%;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Flashback title styling */
+.flashback-note h2 {
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 0;
+    font-weight: bold;
+}
+
+/* Flashback content styling */
+.flashback-note p {
+    text-align: justify;
+    margin: 0;
+}

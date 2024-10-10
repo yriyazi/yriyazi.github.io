@@ -1,0 +1,6 @@
+/* Paragraph styling */
+p {
+    text-indent: 40px; /* Tab-like indentation at the beginning of each paragraph */
+    text-align: justify; /* Justifies the paragraph contents */
+    margin: 1em 0; /* Adds spacing between paragraphs */
+}
